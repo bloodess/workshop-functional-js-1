@@ -7,13 +7,11 @@ console.log(chalk.cyan('\nEXERCISE 1 LOADED\n'));
 
 const zip = (input) => {
 
-	return test = _.zip(input);
-
-	console.log(test);
+	return _.chain(input)
+	.zip(input)
+	.value();
 
     };
-
-console.log(zip(input));
 
 module.exports = {
   zip: zip,

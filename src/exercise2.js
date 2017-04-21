@@ -6,7 +6,7 @@ console.log(chalk.cyan('\nEXERCISE 2 LOADED\n'));
 const reverseYolo = input => {
   return _.chain(input)
     .values()
-    .map(serie => _.orderBy(serie).reverse())
+   	.map(serie => _.orderBy(serie).reverse())
     .flatten()
     .value();
 }
