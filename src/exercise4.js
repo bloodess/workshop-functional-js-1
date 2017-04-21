@@ -16,11 +16,12 @@ var promiseStrings = new Promise(function (fulfill, reject) {
 
 const asyncYolo = (input) => {
 
-	console.log(_.zip(input));
-	return _.zip(input);
 
+	promiseNumbers.then(function(valeur) {
+	  console.log('TEST  : ' + valeur); 
 
-}
+	})
+};
 
 module.exports = {
   asyncYolo: asyncYolo,
